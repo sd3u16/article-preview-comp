@@ -1,2 +1,98 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+*, **::after, **::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: rgba(198, 211, 223, 0.726);
+    padding: 2.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#card{
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.img-header img{
+    max-width: 100%;
+}
+.main{
+    font-size: 0.8rem;
+}
+
+.main p{
+    font-size: 0.95rem;
+}
+.main, .footer{
+    padding: 1.2rem 1.6rem;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar-mich{
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.avatar-mich img{
+    width: 35px;
+    border-radius: 50%;
+    flex-grow: 1;
+}
+
+.mich-ima, .dateName{
+    align-self: flex-start;
+}
+
+.dateName{
+    flex-grow: -1;
+}
+
+.dateName__para{
+    margin: 0;
+}
+
+
+.content{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .content{
+        display: block;
+        position: absolute;
+        left: 300px;
+        top: 10px;
+    }
+
+    #card{
+        width: 750px;
+        display: flex;
+
+    }
+
+    .img-header{
+        display: flex;
+    }
+    
+}
